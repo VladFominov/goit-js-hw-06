@@ -13,11 +13,27 @@ const images = [
   },
 ];
 
+// const list = images.map(image => {
+//   console.log(image);
+//   const li = document.createElement('Li');
+//   li.textContent = image;
+//   console.log(li)
+//   return li;
+// })
+
+const template = images.reduce((prev, {url, alt}) =>
+  prev +
+  `<li class="item">
+  <img class="image" src="${url}" alt="${alt}">
+  </li>`
+  , '')
+console.log(template)
+// console.log(img)
 const ulRef = document.querySelector('.gallery')
 console.log(ulRef)
-const li1 = document.createElement('Li')
-console.log(li1)
-li1.textContent = images[0];
+
+ulRef.insertAdjacentHTML("afterbegin", template);
+
 
 
 

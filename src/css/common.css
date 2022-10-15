@@ -13,6 +13,14 @@ body {
   line-height: 1.5;
 }
 
+.gallery {
+list-style-type: none;
+}
+
+.image {
+  width: 100%;
+}
+
 input {
   padding: 8px;
   font: inherit;
@@ -22,3 +30,5 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+
+
