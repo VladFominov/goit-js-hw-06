@@ -4,8 +4,8 @@ const spanRef = document.querySelector("#name-output")
 console.log(spanRef);
 
 inputRef.addEventListener('input', (e) => {
-    spanRef.textContent = e.target.value;
-    inputRef.classList.remove();
+    spanRef.textContent = e.target.value ? e.target.value : "Anonymous"
+    
 })
 
 // Напиши скрипт, який під час набору тексту в інпуті input#name - input(подія input),
