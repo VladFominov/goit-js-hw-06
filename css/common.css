@@ -15,10 +15,17 @@ body {
 
 .gallery {
 list-style-type: none;
+display: flex;
+gap: 20px;
+padding: 0;
+
 }
+
+
 
 .image {
   width: 100%;
+  height: 100%;
 }
 
 input {
